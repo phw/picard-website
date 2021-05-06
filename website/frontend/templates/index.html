@@ -70,8 +70,18 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-md-offset-1">
-            <div class="col-md-10 col-md-offset-3">
+          <div class="col-md-4">
+            <div class="col-md-10 col-md-offset-1">
+              <i class="fa fa-image fa-5x"></i>
+              <h2>{{ _("Cover Art") }}</h2>
+              {% autoescape false %}
+              <p>{{ _("Picard can find and download the correct cover art for your albums.") }}</p>
+              {% endautoescape %}
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="col-md-10 col-md-offset-1">
             <i class="fa fa-github fa-5x"></i>
             <h2>{{ _("Open Source") }}</h2>
             {% autoescape false %}
@@ -85,7 +95,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-md-offset-1">
+          <div class="col-md-4">
             <div class="col-md-10 col-md-offset-1">
             <i class="fa fa-gear fa-5x"></i>
             <h2>{{ _("Plugin Support") }}</h2>
